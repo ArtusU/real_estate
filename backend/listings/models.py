@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils.timezone import now
-from .models import Realtor
+from realtors.models import Realtor
 
 class Listing(models.Model):
     class SaleType(models.TextChoices):
