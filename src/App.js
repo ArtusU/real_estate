@@ -8,6 +8,8 @@ import NotFound from './components/NotFound';
 import ListingDetail from './containers/ListingDetail';
 import SignUp from './containers/SignUp';
 import Login from './containers/Login';
+import PrivateRoute  from './component/privateRoute';
+
 
 
 import { Provider } from 'react-redux';
@@ -26,7 +28,7 @@ const App = () => (
           <Route exact path='/about' component={About} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/listings' component={Listings} />
-          <Route exact path='/listings/:id' component={ListingDetail} />
+          <PrivateRoute exact path='/listings/:id' component={ListingDetail} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/signup' component={SignUp} />
           <Route component={NotFound} />
