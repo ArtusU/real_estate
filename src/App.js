@@ -8,7 +8,7 @@ import NotFound from './components/NotFound';
 import ListingDetail from './containers/ListingDetail';
 import SignUp from './containers/SignUp';
 import Login from './containers/Login';
-import PrivateRoute  from './component/privateRoute';
+import PrivateRoute from './components/privateRoute';
 
 
 
